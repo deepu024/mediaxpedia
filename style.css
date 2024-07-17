@@ -1,0 +1,99 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body background gradient */
+body {
+    background: linear-gradient(to left, #f0fff4, #c6f6d5);
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header img {
+    height: 80px; /* Adjust logo height */
+    width: auto; /* Maintain aspect ratio */
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333333; /* Dark gray text */
+    font-weight: bold;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    color: #007bff; /* Blue on hover */
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px); /* Adjust container height */
+}
+
+/* Content section styles */
+.content {
+    width: 100%;
+    max-width: 1200px; /* Max width of content */
+    padding: 0 20px;
+}
+
+.content-left, .content-right {
+    padding: 20px;
+}
+
+.content-left h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.content-left .flex {
+    margin-bottom: 20px;
+}
+
+.content-left h4 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.content-left .text-orange-400 {
+    color: #ff7e05; /* Orange color */
+}
+
+.content-left p {
+    font-size: 1.5rem;
+    color: #666666; /* Gray text */
+    line-height: 1.5;
+}
+
+.content-right img {
+    width: 100%; /* Responsive image width */
+    max-width: 400px; /* Maximum image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Image shadow */
+}
