@@ -7,93 +7,196 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
+<style>
+    .footer-bg {
+        background-image: url('./images/footer.png');
+        background-size: cover;
+        background-position: center;
+    }
+</style>
+
 <body class="bg-gray-900 text-white ">
-    <nav class="flex items-center justify-between p-4 ">
-        <div class="flex items-center space-x-4">
-            <a href="./index.html" class="px-3 py-2 text-black bg-white rounded hover:bg-orange-400">
+    <div class="ml-32 mr-32">
+        <nav class="flex items-center justify-between p-4 ">
+            <div class="flex items-center space-x-4">
+                <a href="./index.html" class="px-3 py-2 text-black bg-white rounded hover:bg-orange-400">
 
-                <img src="./images/image.png" alt="Logo" class="h-8">
-            </a>
-            <!-- Replace with your logo image -->
-            <!-- <span class="text-2xl font-bold text-black">Wave<span class="text-white">digital</span></span> -->
+                    <img src="./images/image.png" alt="Logo" class="h-8">
+                </a>
+                <!-- Replace with your logo image -->
+                <!-- <span class="text-2xl font-bold text-black">Wave<span class="text-white">digital</span></span> -->
+            </div>
+
+            <div class="flex items-center space-x-8">
+                <a href="./index.html" class="text-white hover:text-orange-400">Home</a>
+                <a href="./about.html" class="text-white hover:text-orange-400">About</a>
+                <div class="relative group">
+                    <a href="#" class="text-white hover:text-orange-500">Service</a>
+                    <div class="absolute left-0 hidden mt-1 space-y-2 bg-black group-hover:block">
+                        <a href="#" class="block px-4 py-2 text-white hover:text-orange-400">Service 1</a>
+                        <a href="#" class="block px-4 py-2 text-white hover:text-orange-400">Service 2</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <a href="#" class="text-white hover:text-orange-500">Pages</a>
+                    <div class="absolute left-0 hidden mt-1 space-y-2 bg-black group-hover:block">
+                        <a href="#" class="block px-4 py-2 text-white hover:text-orange-400">Page 1</a>
+                        <a href="#" class="block px-4 py-2 text-white hover:text-orange-400">Page 2</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <a href="#" class="text-white hover:text-orange-500">Case Study</a>
+                    <div class="absolute left-0 hidden mt-1 space-y-2 bg-black group-hover:block">
+                        <a href="#" class="block px-4 py-2 text-white hover:text-orange-400">Case Study 1</a>
+                        <a href="#" class="block px-4 py-2 text-white hover:text-orange-400">Case Study 2</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <a href="#" class="text-white hover:text-orange-500">Project</a>
+                    <div class="absolute left-0 hidden mt-1 space-y-2 bg-black group-hover:block">
+                        <a href="#" class="block px-4 py-2 text-white hover:text-orange-400">Project 1</a>
+                        <a href="#" class="block px-4 py-2 text-white hover:text-orange-400">Project 2</a>
+                    </div>
+                </div>
+                <a href="#" class="text-white hover:text-orange-500">Blog</a>
+            </div>
+
+            <button href="./contact.html" class="px-4 py-2 text-black bg-white rounded hover:bg-orange-400">Contact
+                Us</button>
+        </nav>
+        <div class=" ml-32 mt-32 mb-24">
+            <h1 class="text-5xl font-bold ">About iWaveDigital</h1>
+            <div class="flex mt-6 space-x-2">
+
+                <a href="./index.html" class>HOME </a>
+                <p> > </p>
+                <h1>ABOUT US</h1>
+            </div>
+            <!-- <img href = "./images/orange.jpg" alt="icon"> -->
+        </div>
+        <div class="flex ml-32 mr-32">
+
+            <div class="flex-column w-1/2 space-y-6">
+
+                <h1 class=" text-3xl font-bold justify-start"> IWave Digital: Powering,<br>
+                    Growth With Cutting-Edge<br>
+                    Affiliate Marketing</h1>
+                <h1 class="text-xs">IWave Digital is a leading affiliate marketing agency that leverages the <br> latest
+                    technological advancements to drive exceptional results for our <br> clients. We offer a
+                    comprehensive
+                    suite of services, including:</h1>
+            </div>
+            <div class="flex space-x-4">
+                <img class="h-80" src="./images/about1.jpg" alt="Logo">
+                <div class="flex-column w-full space-y-4">
+
+
+                    <img class="h-36" src="./images/about2.jpg" alt="Logo">
+                    <img class="h-36" src="./images/about3.jpg" alt="Logo">
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 py-12">
+            <h2 class="text-3xl font-bold text-center mb-12">Meet with our team</h2>
+            <div class="flex flex-wrap justify-center mx-2">
+                <!-- Team member 1 -->
+                <div class="max-w-xs mx-8 mb-8 text-center">
+                    <img  src="./images/kritika.jpg" alt="CEO & Founder"
+                        class="w-40 h-40 mx-auto rounded-full border-spacing-2 ">
+                    <h3 class="mt-4 text-lg font-semibold">CEO & Founder</h3>
+                </div>
+                <!-- Team member 2 -->
+                <div class="max-w-xs mx-8 mb-8 text-center">
+                    <img src="./images/sumit.jpg" alt="CEO & Founder"
+                        class="w-40 h-40 mx-auto rounded-full object-cover">
+                    <h3 class="mt-4 text-lg font-semibold">CEO & Founder</h3>
+                </div>
+                <!-- Team member 3 -->
+                <div class="max-w-xs mx-8 mb-8 text-center">
+                    <img src="./images/Ashish.jpg" alt="Co-Founder" class="w-40 h-40 mx-auto rounded-full object-cover">
+                    <h3 class="mt-4 text-lg font-semibold">Co-Founder</h3>
+                </div>
+                <!-- Team member 4 -->
+                <div class="max-w-xs mx-8 mb-8 text-center">
+                    <img src="./images/Jitender.jpg" alt="Tech Head"
+                        class="w-40 h-40 mx-auto rounded-full object-cover">
+                    <h3 class="mt-4 text-lg font-semibold">Tech Head</h3>
+                </div>
+            </div>
         </div>
 
-        <div class="flex items-center space-x-8">
-            <a href="./index.html" class="text-white hover:text-orange-400">Home</a>
-            <a href="./about.html" class="text-white hover:text-orange-400">About</a>
-            <div class="relative group">
-                <a href="#" class="text-white hover:text-orange-500">Service</a>
-                <div class="absolute left-0 hidden mt-1 space-y-2 bg-black group-hover:block">
-                    <a href="#" class="block px-4 py-2 text-white hover:text-orange-400">Service 1</a>
-                    <a href="#" class="block px-4 py-2 text-white hover:text-orange-400">Service 2</a>
-                </div>
-            </div>
-            <div class="relative group">
-                <a href="#" class="text-white hover:text-orange-500">Pages</a>
-                <div class="absolute left-0 hidden mt-1 space-y-2 bg-black group-hover:block">
-                    <a href="#" class="block px-4 py-2 text-white hover:text-orange-400">Page 1</a>
-                    <a href="#" class="block px-4 py-2 text-white hover:text-orange-400">Page 2</a>
-                </div>
-            </div>
-            <div class="relative group">
-                <a href="#" class="text-white hover:text-orange-500">Case Study</a>
-                <div class="absolute left-0 hidden mt-1 space-y-2 bg-black group-hover:block">
-                    <a href="#" class="block px-4 py-2 text-white hover:text-orange-400">Case Study 1</a>
-                    <a href="#" class="block px-4 py-2 text-white hover:text-orange-400">Case Study 2</a>
-                </div>
-            </div>
-            <div class="relative group">
-                <a href="#" class="text-white hover:text-orange-500">Project</a>
-                <div class="absolute left-0 hidden mt-1 space-y-2 bg-black group-hover:block">
-                    <a href="#" class="block px-4 py-2 text-white hover:text-orange-400">Project 1</a>
-                    <a href="#" class="block px-4 py-2 text-white hover:text-orange-400">Project 2</a>
-                </div>
-            </div>
-            <a href="#" class="text-white hover:text-orange-500">Blog</a>
-        </div>
 
-        <button class="px-4 py-2 text-black bg-white rounded hover:bg-orange-400">Contact Us</button>
-    </nav>
-    <div class=" ml-32 mt-32 mb-24">
-        <h1 class="text-5xl font-bold ">About iWaveDigital</h1>
-        <div class="flex mt-6 space-x-2">
 
-            <a href="./index.html" class>HOME </a>
-            <p> > </p>
-            <h1>ABOUT US</h1>
-        </div>
     </div>
-    <div class="flex ml-32 mr-32">
 
-        <div class="flex-column w-1/2 space-y-6">
-
-            <h1 class=" text-3xl font-bold justify-start"> IWave Digital: Powering,<br>
-                Growth With Cutting-Edge<br>
-                Affiliate Marketing</h1>
-            <h1 class="text-xs">IWave Digital is a leading affiliate marketing agency that leverages the <br> latest
-                technological advancements to drive exceptional results for our <br> clients. We offer a comprehensive
-                suite of services, including:</h1>
+    </div>
+    <h2 class="text-3xl font-bold text-center mb-12">Trusted by <br>Clients.</h2>
+    <div class="flex flex-row space-x-6 items-center justify-center mb-12 ">
+        <div class="w-1/3 h-80 p-4 bg-gray-700 rounded-lg items-center justify-content ">
+            <p> 5. I wasn't sure affiliate marketing was right for my
+                business, but the team at iWave Digital took the time to
+                understand my goals and develop a customized strategy.
+                Their use of the latest AI-powered targeting has been a
+                game-changer, and I'm seeing a significant increase in
+                conversions.</p>
         </div>
-        <div class="flex space-x-4">
-            <img class="h-80" src="./images/about1.jpg" alt="Logo">
-            <div class="flex-column w-full space-y-4">
+        <div class="w-1/3 h-80 p-4 bg-gray-700 rounded-lg items-center justify-content">
+
+            <p>1. iWave Digital is a game-changer! Their innovative
+                approach and use of the latest affiliate marketing tools
+                have helped us reach new audiences and expand our brand
+                reach. We're seeing a steady increase in qualified leads
+                and conversions.</p>
+
+        </div>
+        <div class="w-1/3 h-80 p-4 bg-gray-700 rounded-lg items-center justify-content">
+
+            <p> 2. We needed a fresh perspective on our affiliate
+                marketing strategy, and iWave Digital delivered it! Their
+                team is highly knowledgeable about the latest trends and
+                technologies, and they were able to develop a program
+                tailored to our specific needs.</p>
+        </div>
+        <div class="w-1/3 h-80 p-4 bg-gray-700 rounded-lg items-center justify-center">
+            <p> 3. iWave Digital is a true partner in our success. They're
+                always looking for new ways to improve our affiliate
+                marketing program using the latest technology. We highly
+                recommend them to any business looking to grow their
+                affiliate sales.</p>
+        </div>
+        <div class="w-1/3 h-80 p-4 bg-gray-700 rounded-lg items-center justify-center">
+
+            <p>
+                4. Impressed by iWave Digital's commitment to transparency
+                and results. Their use of advanced reporting tools allows
+                us to track the performance of our affiliate campaigns in
+                real time and make data-driven decisions.
+            </p>
+
+        </div>
+     </div>
 
 
-                <img class="h-36" src="./images/about2.jpg" alt="Logo">
-                <img class="h-36" src="./images/about3.jpg" alt="Logo">
+    <footer class="bg-gray-900 text-white  relative footer-bg">
+        <div class="container  flex justify-between items-center">
+            <div class="w-1/3 p-4 py-10">
+                <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+                <p>804, 8th Floor, MediaXpedia Technologies, Welldone Tech Park, Sector 48, Sohna Road, Gurgaon,
+                    Haryana - 122018</p>
+                <p>Email: <a href="mailto:sales@iwavedigital.com" class="underline">sales@iwavedigital.com</a></p>
+                <p>Email: <a href="mailto:adops@iwavedigital.com" class="underline">adops@iwavedigital.com</a></p>
+                <p class="mt-4">&copy; 2024 All Rights Reserved - iWaveDigital.com</p>
             </div>
+            <div class="w-1/3  p-4 ">
+                <!-- <iframe class="rounded-lg h-1/2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3482.2344449297926!2d77.0347936154508!3d28.393439282511257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d193fdbf75e6d%3A0x947d248df688b61b!2sWelldone%20Techpark!5e0!3m2!1sen!2sin!4v1594831952684!5m2!1sen!2sin" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+                <iframe class="rounded-lg h-1/2"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14036.077928228338!2d77.038075!3d28.418669!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d23ac952fe5ed%3A0x2d354a104d995c73!2sWelldone%20Techpark!5e0!3m2!1sen!2sin!4v1721215307960!5m2!1sen!2sin"
+                    width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+            <div class="w-1/3 p-4 rounded-lg">
         </div>
-    </div>
-
-    </div>
-
-
-
-
-
-
-
-
+        </div>
+    </footer>
 </body>
-
 </html>

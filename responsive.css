@@ -1,0 +1,202 @@
+
+/* Responsive CSS */
+
+@media (max-width: 580px) {
+  .form-main{
+    width: fit-content;
+    flex-direction: column !important;
+}
+.contact-content-section{
+   width: 100% !important;
+ }
+ .content-form-section
+{
+  .contact-info{
+    width: 100%;
+  }
+}
+
+  .header {
+      margin: 3rem 0.5rem 2rem;
+  }
+
+  .header-title {
+      font-size: 1.5rem;
+  }
+
+  .breadcrumb-link, .breadcrumb-separator, .breadcrumb-current {
+      font-size: 0.8rem;
+  }
+    .service-card {
+        width: calc(100% - 0.5rem);
+        height: auto;
+    }
+
+    .service-image {
+        max-width: 4rem;
+    }
+
+    .service-title {
+        font-size: 1.25rem;
+    }
+}
+@media (min-width: 581px) and (max-width: 720px) {
+  
+  .header {
+    padding: 1.5rem;
+}
+
+.breadcrumb {
+    font-size: 1rem;
+}
+
+.flex {
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg-orange-400,
+.bg-white {
+    width: 80%;
+}
+.header {
+  padding: 2rem;
+}
+
+.breadcrumb {
+  font-size: 1.25rem;
+}
+
+.flex {
+  flex-direction: row;
+}
+
+.bg-orange-400 {
+  width: 33.33%;
+}
+
+.bg-white {
+  width: 33.33%;
+}
+.service-container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.service-card {
+    width: calc(100% - 1rem);
+}
+
+
+.flex {
+  flex-direction: column;
+  align-items: center;
+}
+
+.min-h-screen {
+  min-height: auto;
+  padding: 1rem;
+}
+
+.bg-orange-400,
+.bg-white {
+  width: 80%;
+  margin-bottom: 1rem;
+}
+
+.bg-white {
+  height: auto; /* Let the height be auto to fit content */
+}
+
+.p-8 {
+  padding: 1rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem; /* Adjust font size for smaller screens */
+}
+
+.rounded-tl-3xl, .rounded-br-3xl {
+  border-radius: 1.5rem; /* Adjust border radius for smaller screens */
+}
+
+.header {
+padding: 1rem;
+}
+
+.breadcrumb {
+font-size: 0.875rem;
+}
+
+.flex {
+flex-direction: column;
+align-items: center;
+}
+
+.bg-orange-400,
+.bg-white {
+width: 90%;
+}
+
+.custom-button {
+width: 100%;
+text-align: center;
+}
+  .container {
+      flex-direction: column;
+  }
+  
+  .contact-section, .map-section, .extra-section {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 20px;
+  }
+  
+  .map-iframe {
+      height: 200px;
+
+      .header {
+        margin: 4rem 1rem 3rem;
+    }
+  
+    .header-title {
+        font-size: 2rem;
+    }
+  
+    .breadcrumb {
+        flex-direction: column;
+    }
+  
+    .breadcrumb-link, .breadcrumb-separator, .breadcrumb-current {
+        font-size: 0.9rem;
+    }
+  }
+}
+
+/* Service */
+
+/* Responsive Styles */
+@media (min-width: 720px) and (max-width: 1024px) {
+  .header {
+      margin: 6rem 1.5rem 4rem;
+  }
+
+  .header-title {
+      font-size: 2.5rem;
+  }
+
+  .breadcrumb-link, .breadcrumb-separator, .breadcrumb-current {
+      font-size: 1rem;
+
+@media (max-width: 1024px) {
+  .service-card {
+      width: calc(50% - 0.5rem);
+  }
+}
+  }
+}
+
+
+
+
+

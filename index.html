@@ -5,162 +5,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
 </head>
 
-<style>
-    .footer-bg {
-        background-image: url('./images/footer.jpeg');
-        background-size: cover;
-        background-position: center;
-    }
-</style>
 
-<body class="bg-gray-900 text-white">
-    <div class="ml-24 mr-24 mt-4">
-        <nav class="flex items-center justify-between">
-            <div class="flex items-center space-x-4">
-                <a href="./index.html" class="bg-white hover:text-orange-400">
-                    <img src="./images/image.png" alt="Logo" class="h-8">
+<body>
+    <div class="ur ml-24 mr-24 mt-4">
+        <nav class="navbar">
+            <div class="navbar-left">
+                <a href="./index.html" class="logo-link">
+                    <img src="./images/image.png" alt="Logo" class="logo-img">
                 </a>
             </div>
-
-            <div class="flex items-center space-x-8">
-                <a href="./index.html" class="text-white hover:text-orange-400">Home</a>
-                <a href="./about.html" class="text-white hover:text-orange-400">About</a>
-                <div class="relative group">
-                    <a href="#" class="text-white hover:text-orange-500">Service</a>
-                    <div class="absolute left-0 hidden mt-1 space-y-2 bg-black group-hover:block">
-                        <a href="#" class="block px-4 py-2 text-white hover:text-orange-400">Service 1</a>
-                        <a href="#" class="block px-4 py-2 text-white hover:text-orange-400">Service 2</a>
+            <div class="navbar-center">
+                <a href="./index.html" class="nav-link">Home</a>
+                <a href="./about.html" class="nav-link">About</a>
+                <div class="dropdown">
+                    <a href="./service.html" class="nav-link">Service</a>
+                    <div class="dropdown-content  bg-gray-700 rounded-lg border-orange-200 border border-shadow ">
+                        <a href="#" class="dropdown-item">Service 1</a>
+                        <a href="#" class="dropdown-item">Service 2</a>
                     </div>
                 </div>
-                <div class="relative group">
-                    <a href="#" class="text-white hover:text-orange-500">Pages</a>
-                    <div class="absolute left-0 hidden mt-1 space-y-2 bg-black group-hover:block">
-                        <a href="#" class="block px-4 py-2 text-white hover:text-orange-400">Page 1</a>
-                        <a href="#" class="block px-4 py-2 text-white hover:text-orange-400">Page 2</a>
+                <div class="dropdown">
+                    <a href="#" class="nav-link">Pages</a>
+                    <div class="dropdown-content  bg-gray-700 rounded-lg border-orange-200 border border-shadow ">
+                        <a href="#" class="dropdown-item">Page 1</a>
+                        <a href="#" class="dropdown-item">Page 2</a>
                     </div>
                 </div>
-                <div class="relative group">
-                    <a href="#" class="text-white hover:text-orange-500">Case Study</a>
-                    <div class="absolute left-0 hidden mt-1 space-y-2 bg-black group-hover:block">
-                        <a href="#" class="block px-4 py-2 text-white hover:text-orange-400">Case Study 1</a>
-                        <a href="#" class="block px-4 py-2 text-white hover:text-orange-400">Case Study 2</a>
+                <div class="dropdown">
+                    <a href="#" class="nav-link">Case Study</a>
+                    <div class="dropdown-content  bg-gray-700 rounded-lg border-orange-200 border border-shadow ">
+                        <a href="#" class="dropdown-item">Case Study</a>
                     </div>
                 </div>
-                <div class="relative group">
-                    <a href="#" class="text-white hover:text-orange-500">Project</a>
-                    <div class="absolute left-0 hidden mt-1 space-y-2 bg-black group-hover:block">
-                        <a href="#" class="block px-4 py-2 text-white hover:text-orange-400">Project 1</a>
-                        <a href="#" class="block px-4 py-2 text-white hover:text-orange-400">Project 2</a>
-                    </div>
-                </div>
-                <a href="#" class="text-white hover:text-orange-500">Blog</a>
+                <a href="#" class="nav-link">Blog</a>
             </div>
-
-            <button class="px-4 mr-2 py-2 text-black bg-white rounded hover:bg-orange-400">Contact Us</button>
+            <button class="custom-button"><a href="./contact.html">Contact Us</a></button>
         </nav>
 
-        <div class="flex mt-10 text-2xl">
-            <div class="w-1/2 mt-40">
-                <h1 class="text-4xl font-bold mb-6">Best solution we offer you</h1>
-                <div class="flex text-6xl">
-                    <h4 class="font-bold mb-4">Grow your</h4>
-                    <h4 class="text-orange-400 font-bold mb-4 px-4">Brand,</h4>
-                </div>
-                <div class="flex text-6xl">
-                    <h4 class="font-bold mb-4">Boost your</h4>
-                    <h4 class="text-orange-400 font-bold mb-4 px-4">Sales.</h4>
-                </div>
-                <p class="text-gray-400 text-2xl">The future of affiliate marketing is here. Supercharge your
-                    campaigns <br>
-                    with our industry-first technology and expert <br> strategy.</p>
 
-                <button
-                    class="mt-6 w-48 h-12 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
-                    ALL SERVICES
+        <div class="custom-flex-container">
+            <div class="left-content">
+                <h1 class="main-heading">Best solution we offer you</h1>
+                <div class="sub-heading-container">
+                    <h4 class="sub-heading">Grow your</h4>
+                    <h4 class="highlighted-text">Brand,</h4>
+                </div>
+                <div class="sub-heading-container">
+                    <h4 class="sub-heading">Boost your</h4>
+                    <h4 class="highlighted-text">Sales.</h4>
+                </div>
+                <p class="description">
+                    The future of affiliate marketing is here. Supercharge your campaigns <br>
+                    with our industry-first technology and expert <br> strategy.
+                </p>
+                <button class="custom-button mt-4">
+                    <a href="./contact.html">Contact Us</a>
                 </button>
             </div>
-            <div class="w-1/2 mt-20 relative overflow-hidden rounded-lg">
-                <img src="images/growth_home.jpg" class="w-96 mx-36" alt="Growth Image">
+            <div class="right-content">
+                <img src="images/growth_home.jpg" class="growth-image" alt="Growth Image">
             </div>
         </div>
 
 
-        <main class="mx-auto mt-8 p-8 bg-orange-400 rounded-lg shadow-lg">
+
+        <main class="main-container ">
             <div class="text-center">
-                <h2 class="text-3xl font-bold mb-4">15 Years of Experience</h2>
-                <p class="text-gray-700 mb-6">
+                <h2 class="main-title">15 Years of Experience</h2>
+                <p class="main-quote">
                     "Affiliate marketing is a dynamic field, constantly evolving with new technologies and consumer
                     behaviors. Building strong relationships with affiliates and staying ahead of trends is key to
                     sustained success."
                 </p>
-                <div class="flex items-center justify-center">
-                    <img src="/images/sumitsharma.png" alt="Sumit Sharma" class="h-16 w-16 rounded-full">
-                    <div class="ml-4 text-left">
-                        <p class="text-lg font-bold">Sumit Sharma</p>
-                        <p class="text-gray-600">Founder of (iWaveDigital - 5 star Agency)</p>
+                <div class="author-info content-center items-center justify-center">
+                    <img src="/images/sumitsharma.png" alt="Sumit Sharma" class="author-image">
+                    <div class="author-text">
+                        <p class="author-name">Sumit Sharma</p>
+                        <p class="author-role">Founder of (iWaveDigital - 5 star Agency)</p>
                     </div>
                 </div>
             </div>
 
-            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-gray-900 p-6 rounded-lg shadow-lg text-center">
-                    <div class="text-2xl mb-4">
-                        <i class="fas fa-phone-alt text-yellow-500"></i>
+            <div class="info-grid flex flex-row items-center justify-center">
+                <div class="info-card">
+                    <div class="info-icon yellow-icon">
+                        <svg class="fas fa-phone-alt" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_289_84)">
+                                <path
+                                    d="M23.2969 0H20.4375C20.0489 0 19.7344 0.314484 19.7344 0.703125V1.40625H13.9799C13.6886 0.589594 12.9155 0 12 0C11.0845 0 10.3114 0.589594 10.0201 1.40625H4.26562V0.703125C4.26562 0.314484 3.95114 0 3.5625 0H0.703125C0.314484 0 0 0.314484 0 0.703125V3.51562C0 3.90427 0.314484 4.21875 0.703125 4.21875H3.5625C3.95114 4.21875 4.26562 3.90427 4.26562 3.51562V2.80312H7.15331C4.71314 4.32755 3.10416 7.005 2.91183 10.0038C2.06817 10.28 1.45312 11.0653 1.45312 12C1.45312 13.1632 2.39934 14.1094 3.5625 14.1094C4.72566 14.1094 5.67188 13.1632 5.67188 12C5.67188 11.1028 5.10652 10.34 4.31531 10.0356C4.55522 6.69225 6.88809 3.87431 10.1331 3.07031C10.4841 3.74892 11.1847 4.21875 12 4.21875C12.8153 4.21875 13.5159 3.74892 13.8669 3.07031C17.1119 3.87427 19.4448 6.6922 19.6847 10.0356C18.8935 10.34 18.3281 11.1028 18.3281 12C18.3281 13.1632 19.2743 14.1094 20.4375 14.1094C21.6007 14.1094 22.5469 13.1632 22.5469 12C22.5469 11.0653 21.9318 10.28 21.0882 10.0038C20.8958 7.005 19.2869 4.33692 16.8467 2.8125H19.7344V3.51562C19.7344 3.90427 20.0489 4.21875 20.4375 4.21875H23.2969C23.6855 4.21875 24 3.90427 24 3.51562V0.703125C24 0.314484 23.6855 0 23.2969 0Z"
+                                    fill="currentColor"></path>
+                                <path
+                                    d="M16.7835 23.1279C16.4157 22.0025 15.3561 21.1406 14.1093 21.1406H9.89052C8.64365 21.1406 7.58408 22.0025 7.2163 23.1279C7.07451 23.5618 7.44365 24 7.90021 24H16.0996C16.5561 24 16.9253 23.5618 16.7835 23.1279Z"
+                                    fill="currentColor"></path>
+                                <path
+                                    d="M18.21 14.4225L12.7031 6.16217V12.8327C13.5198 13.1239 14.1094 13.8971 14.1094 14.8125C14.1094 15.9757 13.1632 16.9219 12 16.9219C10.8369 16.9219 9.89063 15.9757 9.89063 14.8125C9.89063 13.8971 10.4802 13.1239 11.2969 12.8327V6.16217L5.79001 14.4225C5.60391 14.7013 5.64099 15.0728 5.8779 15.3097C7.16869 16.6005 7.99379 18.2634 8.31221 20.0471C8.80065 19.849 9.33188 19.7344 9.89063 19.7344H14.1094C14.6681 19.7344 15.1994 19.8489 15.6878 20.047C16.0062 18.2632 16.8313 16.6005 18.1221 15.3097C18.359 15.0728 18.3961 14.7013 18.21 14.4225Z"
+                                    fill="currentColor"></path>
+                                <path
+                                    d="M12 14.1094C11.6121 14.1094 11.2969 14.4246 11.2969 14.8125C11.2969 15.2004 11.6121 15.5156 12 15.5156C12.3879 15.5156 12.7031 15.2004 12.7031 14.8125C12.7031 14.4246 12.3879 14.1094 12 14.1094Z"
+                                    fill="currentColor"></path>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_289_84">
+                                    <rect width="24" height="24" fill="currentColor"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-2">Service we can help you with</h3>
-                    <a href="#" class="text-blue-500 hover:underline">Our Service</a>
+                    <h3 class="info-title">Service we can help you with</h3>
+                    <i class="fa-solid text-black fa-arrow-right p-3"></i>
+                    <a href="./services.html" class="info-link">Our Service</a>
                 </div>
-                <div class="bg-gray-900 p-6 rounded-lg shadow-lg text-center">
-                    <div class="text-2xl mb-4">
-                        <i class="fas fa-info-circle text-blue-500"></i>
+                <div class="info-card">
+                    <div class="info-icon blue-icon">
+                        <svg class="fas fa-phone-alt" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_289_84)">
+                                <path
+                                    d="M23.2969 0H20.4375C20.0489 0 19.7344 0.314484 19.7344 0.703125V1.40625H13.9799C13.6886 0.589594 12.9155 0 12 0C11.0845 0 10.3114 0.589594 10.0201 1.40625H4.26562V0.703125C4.26562 0.314484 3.95114 0 3.5625 0H0.703125C0.314484 0 0 0.314484 0 0.703125V3.51562C0 3.90427 0.314484 4.21875 0.703125 4.21875H3.5625C3.95114 4.21875 4.26562 3.90427 4.26562 3.51562V2.80312H7.15331C4.71314 4.32755 3.10416 7.005 2.91183 10.0038C2.06817 10.28 1.45312 11.0653 1.45312 12C1.45312 13.1632 2.39934 14.1094 3.5625 14.1094C4.72566 14.1094 5.67188 13.1632 5.67188 12C5.67188 11.1028 5.10652 10.34 4.31531 10.0356C4.55522 6.69225 6.88809 3.87431 10.1331 3.07031C10.4841 3.74892 11.1847 4.21875 12 4.21875C12.8153 4.21875 13.5159 3.74892 13.8669 3.07031C17.1119 3.87427 19.4448 6.6922 19.6847 10.0356C18.8935 10.34 18.3281 11.1028 18.3281 12C18.3281 13.1632 19.2743 14.1094 20.4375 14.1094C21.6007 14.1094 22.5469 13.1632 22.5469 12C22.5469 11.0653 21.9318 10.28 21.0882 10.0038C20.8958 7.005 19.2869 4.33692 16.8467 2.8125H19.7344V3.51562C19.7344 3.90427 20.0489 4.21875 20.4375 4.21875H23.2969C23.6855 4.21875 24 3.90427 24 3.51562V0.703125C24 0.314484 23.6855 0 23.2969 0Z"
+                                    fill="currentColor"></path>
+                                <path
+                                    d="M16.7835 23.1279C16.4157 22.0025 15.3561 21.1406 14.1093 21.1406H9.89052C8.64365 21.1406 7.58408 22.0025 7.2163 23.1279C7.07451 23.5618 7.44365 24 7.90021 24H16.0996C16.5561 24 16.9253 23.5618 16.7835 23.1279Z"
+                                    fill="currentColor"></path>
+                                <path
+                                    d="M18.21 14.4225L12.7031 6.16217V12.8327C13.5198 13.1239 14.1094 13.8971 14.1094 14.8125C14.1094 15.9757 13.1632 16.9219 12 16.9219C10.8369 16.9219 9.89063 15.9757 9.89063 14.8125C9.89063 13.8971 10.4802 13.1239 11.2969 12.8327V6.16217L5.79001 14.4225C5.60391 14.7013 5.64099 15.0728 5.8779 15.3097C7.16869 16.6005 7.99379 18.2634 8.31221 20.0471C8.80065 19.849 9.33188 19.7344 9.89063 19.7344H14.1094C14.6681 19.7344 15.1994 19.8489 15.6878 20.047C16.0062 18.2632 16.8313 16.6005 18.1221 15.3097C18.359 15.0728 18.3961 14.7013 18.21 14.4225Z"
+                                    fill="currentColor"></path>
+                                <path
+                                    d="M12 14.1094C11.6121 14.1094 11.2969 14.4246 11.2969 14.8125C11.2969 15.2004 11.6121 15.5156 12 15.5156C12.3879 15.5156 12.7031 15.2004 12.7031 14.8125C12.7031 14.4246 12.3879 14.1094 12 14.1094Z"
+                                    fill="currentColor"></path>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_289_84">
+                                    <rect width="24" height="24" fill="currentColor"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-2">Why you should choose us</h3>
-                    <a href="#" class="text-blue-500 hover:underline">About Us</a>
+                    <h3 class="info-title ">We Provide free SEO Analysis</h3>
+                    <i class="fa-solid text-black fa-arrow-right p-3"></i>
+                    <a href="#" class="info-link">Contact Us</a>
                 </div>
             </div>
         </main>
 
-
-
-
-        <div class="carousel py-8 flex">
-            <div class="carousel-item h-auto w-1/4 p-4">
-                <div class="p-6 bg-gray-800 rounded-lg">
-                    <div class="mb-4 text-center">
-                        <img src="web-development.png" alt="Web Development" class="mx-auto mb-4 h-12">
-                        <h2 class="mb-2 text-xl font-bold">Web Development</h2>
-                        <p class="mb-4">Web development is the process of creating websites and web applications for the
-                            internet or intranet.</p>
-                        <ul>
-                            <li class="flex items-center"><span
-                                    class="w-2 h-2 mr-2 bg-green-500 rounded-full"></span>Full-stack development</li>
-                            <li class="flex items-center"><span
-                                    class="w-2 h-2 mr-2 bg-green-500 rounded-full"></span>Responsive web design</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item h-auto w-1/4 p-4">
-                <div class="p-6 bg-gray-800 rounded-lg">
-                    <div class="mb-4 text-center">
-                        <img src="cloud-solutions.png" alt="Cloud Solutions" class="mx-auto mb-4 h-12">
-                        <h2 class="mb-2 text-xl font-bold">Cloud Solutions</h2>
-                        <p class="mb-4">Cloud solutions refer to the use of cloud computing technology to provide
-                            services
-                            and solutions over the internet.</p>
-                        <ul>
-                            <li class="flex items-center"><span
-                                    class="w-2 h-2 mr-2 bg-green-500 rounded-full"></span>Responsive web design</li>
-                            <li class="flex items-center"><span
-                                    class="w-2 h-2 mr-2 bg-green-500 rounded-full"></span>Web application development
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <section class="bg-black-100">
             <div class="relative h-96">
@@ -168,7 +161,8 @@
                     style="background-image: url('./images/demo.webp');"></div>
                 <div class="relative flex items-center justify-center h-full">
                     <div class="text-center text-white">
-                        <h6 class="font-bold text-3xl">We Shape the Future of Affiliate Marketing: Driving Growth
+                        <h6 class="font-bold text-3xl text-orange-500">We Shape the Future of Affiliate Marketing:
+                            Driving Growth
                             Through Innovation</h6>
                         <p class="mt-10 max-w-md mx-auto">With our team comprising industry experts boasting over 15
                             years of experience in the affiliate industry, we serve as your innovation partners.
@@ -180,30 +174,94 @@
             </div>
     </div>
     </section>
+    <h2 class="customer-feedback-title"> Customer's Feedback </h2>
+    <div class="feedback-container">
+        <div class="feedback-card">
+            <div class="quote-icon">
+                <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <p> iWave Digital is a game-changer! Their innovative approach and use of the latest affiliate marketing
+                tools have helped us reach new audiences and expand our brand reach. We're seeing a steady increase in
+                qualified leads and conversions.</p>
+            <div>
+                <i class="fa-solid text-yellow-500 fa-star"></i>
+                <i class="fa-solid text-yellow-500 fa-star"></i>
+                <i class="fa-solid text-yellow-500 fa-star"></i>
+                <i class="fa-solid text-yellow-500 fa-star"></i>
+                <i class="fa-solid fa-star text-gray-300"></i>
+            </div>
+        </div>
+        <div class="feedback-card">
+            <div class="quote-icon">
+                <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <p>We needed a fresh perspective on our affiliate marketing strategy, and iWave Digital delivered it! Their
+                team is highly knowledgeable about the latest trends and technologies, and they were able to develop a
+                program tailored to our specific needs</p>
+            <div>
+                <i class="fa-solid text-yellow-500 fa-star"></i>
+                <i class="fa-solid text-yellow-500 fa-star"></i>
+                <i class="fa-solid text-yellow-500 fa-star"></i>
+                <i class="fa-solid fa-star text-gray-300"></i>
+                <i class="fa-solid fa-star text-gray-300"></i>
 
-    <footer class="bg-gray-900 text-white  relative footer-bg">
-        <div class="container  flex justify-between items-center">
-            <div class="w-1/3 p-4 py-10">
-                <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+            </div>
+        </div>
+        <div class="feedback-card">
+            <div class="quote-icon">
+                <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <p>iWave Digital is a true partner in our success. They're always looking for new ways to improve our
+                affiliate marketing program using the latest technology. We highly recommend them to any business
+                looking to grow their affiliate sales.</p>
+            <div>
+                <i class="fa-solid text-yellow-500 fa-star"></i>
+                <i class="fa-solid text-yellow-500 fa-star"></i>
+                <i class="fa-solid text-yellow-500 fa-star"></i>
+                <i class="fa-solid text-yellow-500 fa-star"></i>
+                <i class="fa-solid fa-star text-gray-300 "></i>
+            </div>
+        </div>
+
+        <div class="feedback-card">
+            <div class="quote-icon">
+                <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <p>iWave Digital is a true partner in our success. They're always looking for new ways to improve our
+                affiliate marketing program using the latest technology. We highly recommend them to any business
+                looking to grow their affiliate sales.</p>
+            <div>
+                <i class="fa-solid text-yellow-500 fa-star"></i>
+                <i class="fa-solid text-yellow-500 fa-star"></i>
+                <i class="fa-solid text-yellow-500 fa-star"></i>
+                <i class="fa-solid text-yellow-500 fa-star"></i>
+                <i class="fa-solid fa-star text-gray-300 "></i>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-bg">
+        <div class="container">
+            <div class="contact-section">
+                <h2>Contact Us</h2>
                 <p>804, 8th Floor, MediaXpedia Technologies, Welldone Tech Park, Sector 48, Sohna Road, Gurgaon, Haryana
                     - 122018</p>
-                <p>Email: <a href="mailto:sales@iwavedigital.com" class="underline">sales@iwavedigital.com</a></p>
-                <p>Email: <a href="mailto:adops@iwavedigital.com" class="underline">adops@iwavedigital.com</a></p>
-                <p class="mt-4">&copy; 2024 All Rights Reserved - iWaveDigital.com</p>
+                <p>Email: <a href="mailto:sales@iwavedigital.com">sales@iwavedigital.com</a></p>
+                <p>Email: <a href="mailto:adops@iwavedigital.com">adops@iwavedigital.com</a></p>
+                <p>&copy; 2024 All Rights Reserved - iWaveDigital.com</p>
             </div>
-            <div class="w-1/3  p-4 ">
-                <!-- <iframe class="rounded-lg h-1/2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3482.2344449297926!2d77.0347936154508!3d28.393439282511257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d193fdbf75e6d%3A0x947d248df688b61b!2sWelldone%20Techpark!5e0!3m2!1sen!2sin!4v1594831952684!5m2!1sen!2sin" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
-                <iframe class="rounded-lg h-1/2"
+            <div class="map-section">
+                <iframe class="map-iframe"
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14036.077928228338!2d77.038075!3d28.418669!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d23ac952fe5ed%3A0x2d354a104d995c73!2sWelldone%20Techpark!5e0!3m2!1sen!2sin!4v1721215307960!5m2!1sen!2sin"
                     width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
                     tabindex="0"></iframe>
             </div>
-            <div class="w-1/3 p-4 rounded-lg">
-
-
+            <div class="extra-section">
             </div>
-
         </div>
     </footer>
+
+
 </body>
+
 </html>
