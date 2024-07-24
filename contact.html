@@ -4,48 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <script src= 
+"https://cdn.tailwindcss.com"> 
+	</script> 
+	<script src= 
+"https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"> 
+	</script> 
+
 </head>
 
+<style>
+    .footer-bg {
+        background-image: url('./images/footer.jpeg');
+        background-size: cover;
+        background-position: center;
+    }
 
-<body>
-    <div class="ur ml-24 mr-24 mt-4">
-        <nav class="navbar">
-            <div class="navbar-left">
-                <a href="./index.html" class="logo-link">
-                    <img src="./images/image.png" alt="Logo" class="logo-img">
-                </a>
+    .footer-bg {
+        background-image: url('./images/footer.png');
+        background-size: cover;
+        background-position: center;
+    }
+</style>
+
+<body class="">
+    <nav class="navbar">
+        <div class="navbar-container">
+            
+
+                <a> <div class="logo"><img src="./images/image.png"></div></a>
+            
+            <div class="menu-icon" id="menu-icon">
+                &#9776;
             </div>
-            <div class="navbar-center">
-                <a href="./index.html" class="nav-link">Home</a>
-                <a href="./about.html" class="nav-link">About</a>
-                <div class="dropdown">
-                    <a href="./service.html" class="nav-link">Service</a>
-                    <div class="dropdown-content  bg-gray-700 rounded-lg border-orange-200 border border-shadow ">
-                        <a href="#" class="dropdown-item">Service 1</a>
-                        <a href="#" class="dropdown-item">Service 2</a>
-                    </div>
-                </div>
-                <div class="dropdown ">
-                    <a href="#" class="nav-link">Pages</a>
-                    <div class="dropdown-content  bg-gray-700 rounded-lg border-orange-200 border border-shadow ">
-                        <a href="#" class="dropdown-item">Page 1</a>
-                        <a href="#" class="dropdown-item">Page 2</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <a href="#" class="nav-link">Case Study</a>
-                    <div class="dropdown-content  bg-gray-700 rounded-lg border-orange-200 border border-shadow ">
-                        <a href="#" class="dropdown-item">Case Study</a>
-                    </div>
-                </div>
-                <a href="#" class="nav-link">Blog</a>
-            </div>
-            <button class="custom-button"><a href="./contact.html">Contact Us</a></button>
-        </nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="./">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./service.html">Services</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <script src="script.js"></script>
+
 
 
         <div class="header">

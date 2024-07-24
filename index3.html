@@ -4,84 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
-
-    <script src= 
-"https://cdn.tailwindcss.com"> 
-	</script> 
-	<script src= 
-"https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"> 
-	</script> 
-
 </head>
 
-<style>
-    .footer-bg {
-        background-image: url('./images/footer.jpeg');
-        background-size: cover;
-        background-position: center;
-    }
 
-    .footer-bg {
-        background-image: url('./images/footer.png');
-        background-size: cover;
-        background-position: center;
-    }
-</style>
-
-<body class="">
-    <nav class="navbar">
-        <div class="navbar-container">
-            
-
-                <a> <div class="logo"><img src="./images/image.png"></div></a>
-            
-            <div class="menu-icon" id="menu-icon">
-                &#9776;
+<body>
+    <div class="ur ml-24 mr-24 mt-4">
+        <nav class="navbar" id="navbar">
+            <div class="navbar-left">
+                <a href="./index.html" class="logo-link">
+                    <img src="./images/image.png" alt="Logo" class="logo-img">
+                </a>
             </div>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="./">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./service.html">Services</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Blogs</a></li>
-                <li><a href="./contact.html">Contact Us</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <script src="script.js"></script>
-
-
-        <div class=" flex justify-center justify-content">
-            <div class="w-1/2 mt-40">
-                <h1 class="text-2xl sm:text-base flex-none  mb-6">Best solution we offer you</h1>
-                <div class="flex text-6xl">
-                    <h4 class="font-bold mb-4">Grow your</h4>
-                    <h4 class="text-orange-400 font-bold mb-4 px-4">Brand,</h4>
+            <div class="navbar-center">
+                <a href="./index.html" class="nav-link">Home</a>
+                <a href="./about.html" class="nav-link">About</a>
+                <div class="dropdown">
+                    <a href="./service.html" class="nav-link">Service</a>
+                    <div class="dropdown-content bg-gray-700 rounded-lg border-orange-200 border border-shadow">
+                        <a href="#" class="dropdown-item">Service 1</a>
+                        <a href="#" class="dropdown-item">Service 2</a>
+                    </div>
                 </div>
-                <div class="flex text-6xl">
-                    <h4 class="font-bold mb-4">Boost your</h4>
-                    <h4 class="text-orange-400 font-bold mb-4 px-4">Sales.</h4>
+                <div class="dropdown">
+                    <a href="#" class="nav-link">Pages</a>
+                    <div class="dropdown-content bg-gray-700 rounded-lg border-orange-200 border border-shadow">
+                        <a href="#" class="dropdown-item">Page 1</a>
+                        <a href="#" class="dropdown-item">Page 2</a>
+                    </div>
                 </div>
-                <p class="text-gray-400 text-2xl">The future of affiliate marketing is here. Supercharge your
-                    campaigns <br>
-                    with our industry-first technology and expert <br> strategy.</p>
-
-
-                <button class="px-2 mr-1 py-2 mt-4 text-black bg-white rounded hover:bg-orange-400"> <a
-                        href="./contact.html">Contact Us</a></button>
-
+                <div class="dropdown">
+                    <a href="#" class="nav-link">Case Study</a>
+                    <div class="dropdown-content bg-gray-700 rounded-lg border-orange-200 border border-shadow">
+                        <a href="#" class="dropdown-item">Case Study</a>
+                    </div>
+                </div>
+                <a href="#" class="nav-link">Blog</a>
             </div>
-            <div class="w-full h-2xl mt-20 relative overflow-hidden rounded-2xl">
-                <img src="images/growth_home.jpg" class="w-fit mx-36" alt="Growth Image">
+            <button class="custom-button"><a href="./contact.html">Contact Us</a></button>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+
+
+        <div class="custom-flex-container">
+            <div class="left-content">
+                <h1 class="main-heading">Best solution we offer you</h1>
+                <div class="sub-heading-container">
+                    <h4 class="sub-heading">Grow your</h4>
+                    <h4 class="highlighted-text">Brand,</h4>
+                </div>
+                <div class="sub-heading-container">
+                    <h4 class="sub-heading">Boost your</h4>
+                    <h4 class="highlighted-text">Sales.</h4>
+                </div>
+                <p class="description">
+                    The future of affiliate marketing is here. Supercharge your campaigns <br>
+                    with our industry-first technology and expert <br> strategy.
+                </p>
+                <button class="custom-button mt-4">
+                    <a href="./contact.html">Contact Us</a>
+                </button>
+            </div>
+            <div class="right-content">
+                <img src="images/growth_home.jpg" class="growth-image" alt="Growth Image">
             </div>
         </div>
 
-        <!-- custom css of main available -->
+
+
         <main class="main-container ">
             <div class="text-center">
                 <h2 class="main-title">15 Years of Experience</h2>
@@ -99,8 +95,8 @@
                 </div>
             </div>
 
-            <div class="info-grid flex sm:flex-row flex-col items-center justify-center">
-                <div class="info-card ">
+            <div class="info-grid flex flex-row items-center justify-center">
+                <div class="info-card">
                     <div class="info-icon yellow-icon">
                         <svg class="fas fa-phone-alt" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -162,18 +158,14 @@
         </main>
 
 
-
-
-
-        <!--section tailwind css -->
         <section class="bg-black-100">
             <div class="relative h-96">
                 <div class="absolute inset-0 bg-black bg-center opacity-20"
                     style="background-image: url('./images/demo.webp');"></div>
                 <div class="relative flex items-center justify-center h-full">
-                    <div class="text-center ">
-                        <h6 class="font-bold text-3xl text-orange-400 sm:text-xl">We Shape the Future of Affiliate
-                            Marketing: Driving Growth
+                    <div class="text-center text-white">
+                        <h6 class="font-bold text-3xl text-orange-500">We Shape the Future of Affiliate Marketing:
+                            Driving Growth
                             Through Innovation</h6>
                         <p class="mt-10 max-w-md mx-auto">With our team comprising industry experts boasting over 15
                             years of experience in the affiliate industry, we serve as your innovation partners.
@@ -185,58 +177,94 @@
             </div>
     </div>
     </section>
-
-
-    <h2 class="text-3xl font-bold text-center mb-12 mt-12">Trusted by <br>Clients.</h2>
-    <div class="flex flex-row space-x-6 items-center justify-center mb-12 m-10">
-        <div class="w-1/3 h-80 p-4 bg-gray-700 rounded-lg items-center justify-content ">
+    <h2 class="customer-feedback-title"> Customer's Feedback </h2>
+    <div class="feedback-container">
+        <div class="feedback-card">
+            <div class="quote-icon">
+                <i class="fa-solid fa-quote-left"></i>
+            </div>
             <p> iWave Digital is a game-changer! Their innovative approach and use of the latest affiliate marketing
                 tools have helped us reach new audiences and expand our brand reach. We're seeing a steady increase in
                 qualified leads and conversions.</p>
+            <div>
+                <i class="fa-solid text-yellow-500 fa-star"></i>
+                <i class="fa-solid text-yellow-500 fa-star"></i>
+                <i class="fa-solid text-yellow-500 fa-star"></i>
+                <i class="fa-solid text-yellow-500 fa-star"></i>
+                <i class="fa-solid fa-star text-gray-300"></i>
+            </div>
         </div>
-        <div class="w-1/3 h-80 p-4 bg-gray-700 rounded-lg items-center justify-content">
-
+        <div class="feedback-card">
+            <div class="quote-icon">
+                <i class="fa-solid fa-quote-left"></i>
+            </div>
             <p>We needed a fresh perspective on our affiliate marketing strategy, and iWave Digital delivered it! Their
                 team is highly knowledgeable about the latest trends and technologies, and they were able to develop a
                 program tailored to our specific needs</p>
+            <div>
+                <i class="fa-solid text-yellow-500 fa-star"></i>
+                <i class="fa-solid text-yellow-500 fa-star"></i>
+                <i class="fa-solid text-yellow-500 fa-star"></i>
+                <i class="fa-solid fa-star text-gray-300"></i>
+                <i class="fa-solid fa-star text-gray-300"></i>
 
+            </div>
         </div>
-        <div class="w-1/3 h-80 p-4 bg-gray-700 rounded-lg items-center justify-content">
-
+        <div class="feedback-card">
+            <div class="quote-icon">
+                <i class="fa-solid fa-quote-left"></i>
+            </div>
             <p>iWave Digital is a true partner in our success. They're always looking for new ways to improve our
                 affiliate marketing program using the latest technology. We highly recommend them to any business
                 looking to grow their affiliate sales.</p>
+            <div>
+                <i class="fa-solid text-yellow-500 fa-star"></i>
+                <i class="fa-solid text-yellow-500 fa-star"></i>
+                <i class="fa-solid text-yellow-500 fa-star"></i>
+                <i class="fa-solid text-yellow-500 fa-star"></i>
+                <i class="fa-solid fa-star text-gray-300 "></i>
+            </div>
         </div>
 
-
+        <div class="feedback-card">
+            <div class="quote-icon">
+                <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <p>iWave Digital is a true partner in our success. They're always looking for new ways to improve our
+                affiliate marketing program using the latest technology. We highly recommend them to any business
+                looking to grow their affiliate sales.</p>
+            <div>
+                <i class="fa-solid text-yellow-500 fa-star"></i>
+                <i class="fa-solid text-yellow-500 fa-star"></i>
+                <i class="fa-solid text-yellow-500 fa-star"></i>
+                <i class="fa-solid text-yellow-500 fa-star"></i>
+                <i class="fa-solid fa-star text-gray-300 "></i>
+            </div>
+        </div>
     </div>
 
-
-
-    <footer class="bg-gray-900 text-white  relative footer-bg">
-        <div class="container  flex justify-between items-center">
-            <div class="w-1/3 p-4 py-10">
-                <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+    <footer class="footer-bg">
+        <div class="container">
+            <div class="contact-section">
+                <h2>Contact Us</h2>
                 <p>804, 8th Floor, MediaXpedia Technologies, Welldone Tech Park, Sector 48, Sohna Road, Gurgaon, Haryana
                     - 122018</p>
-                <p>Email: <a href="mailto:sales@iwavedigital.com" class="underline">sales@iwavedigital.com</a></p>
-                <p>Email: <a href="mailto:adops@iwavedigital.com" class="underline">adops@iwavedigital.com</a></p>
-                <p class="mt-4">&copy; 2024 All Rights Reserved - iWaveDigital.com</p>
+                <p>Email: <a href="mailto:sales@iwavedigital.com">sales@iwavedigital.com</a></p>
+                <p>Email: <a href="mailto:adops@iwavedigital.com">adops@iwavedigital.com</a></p>
+                <p>&copy; 2024 All Rights Reserved - iWaveDigital.com</p>
             </div>
-            <div class="w-1/3  p-4 ">
-                <!-- <iframe class="rounded-lg h-1/2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3482.2344449297926!2d77.0347936154508!3d28.393439282511257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d193fdbf75e6d%3A0x947d248df688b61b!2sWelldone%20Techpark!5e0!3m2!1sen!2sin!4v1594831952684!5m2!1sen!2sin" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
-                <iframe class="rounded-lg h-1/2"
+            <div class="map-section">
+                <iframe class="map-iframe"
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14036.077928228338!2d77.038075!3d28.418669!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d23ac952fe5ed%3A0x2d354a104d995c73!2sWelldone%20Techpark!5e0!3m2!1sen!2sin!4v1721215307960!5m2!1sen!2sin"
                     width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
                     tabindex="0"></iframe>
             </div>
-            <div class="w-1/3 p-4 rounded-lg">
-
-
+            <div class="extra-section">
             </div>
-
         </div>
     </footer>
+
+
 </body>
 
 </html>

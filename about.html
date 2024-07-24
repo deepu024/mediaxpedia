@@ -4,10 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <script src= 
+"https://cdn.tailwindcss.com"> 
+	</script> 
+	<script src= 
+"https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"> 
+	</script> 
+
 </head>
 
 <style>
+    .footer-bg {
+        background-image: url('./images/footer.jpeg');
+        background-size: cover;
+        background-position: center;
+    }
+
     .footer-bg {
         background-image: url('./images/footer.png');
         background-size: cover;
@@ -15,55 +30,30 @@
     }
 </style>
 
-<body class="bg-gray-900 text-white ">
-    <div class="ml-32 mr-32">
-        <nav class="flex items-center justify-between p-4 ">
-            <div class="flex items-center space-x-4">
-                <a href="./index.html" class="px-3 py-2 text-black bg-white rounded hover:bg-orange-400">
+<body class="">
+    <nav class="navbar">
+        <div class="navbar-container">
+            
 
-                    <img src="./images/image.png" alt="Logo" class="h-8">
-                </a>
-                <!-- Replace with your logo image -->
-                <!-- <span class="text-2xl font-bold text-black">Wave<span class="text-white">digital</span></span> -->
+                <a> <div class="logo"><img src="./images/image.png"></div></a>
+            
+            <div class="menu-icon" id="menu-icon">
+                &#9776;
             </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="./">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./service.html">Services</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
 
-            <div class="flex items-center space-x-8">
-                <a href="./index.html" class="text-white hover:text-orange-400">Home</a>
-                <a href="./about.html" class="text-white hover:text-orange-400">About</a>
-                <div class="relative group">
-                    <a href="#" class="text-white hover:text-orange-500">Service</a>
-                    <div class="absolute left-0 hidden mt-1 space-y-2 bg-black group-hover:block">
-                        <a href="#" class="block px-4 py-2 text-white hover:text-orange-400">Service 1</a>
-                        <a href="#" class="block px-4 py-2 text-white hover:text-orange-400">Service 2</a>
-                    </div>
-                </div>
-                <div class="relative group">
-                    <a href="#" class="text-white hover:text-orange-500">Pages</a>
-                    <div class="absolute left-0 hidden mt-1 space-y-2 bg-black group-hover:block">
-                        <a href="#" class="block px-4 py-2 text-white hover:text-orange-400">Page 1</a>
-                        <a href="#" class="block px-4 py-2 text-white hover:text-orange-400">Page 2</a>
-                    </div>
-                </div>
-                <div class="relative group">
-                    <a href="#" class="text-white hover:text-orange-500">Case Study</a>
-                    <div class="absolute left-0 hidden mt-1 space-y-2 bg-black group-hover:block">
-                        <a href="#" class="block px-4 py-2 text-white hover:text-orange-400">Case Study 1</a>
-                        <a href="#" class="block px-4 py-2 text-white hover:text-orange-400">Case Study 2</a>
-                    </div>
-                </div>
-                <div class="relative group">
-                    <a href="#" class="text-white hover:text-orange-500">Project</a>
-                    <div class="absolute left-0 hidden mt-1 space-y-2 bg-black group-hover:block">
-                        <a href="#" class="block px-4 py-2 text-white hover:text-orange-400">Project 1</a>
-                        <a href="#" class="block px-4 py-2 text-white hover:text-orange-400">Project 2</a>
-                    </div>
-                </div>
-                <a href="#" class="text-white hover:text-orange-500">Blog</a>
-            </div>
+    <script src="script.js"></script>
 
-            <button href="./contact.html" class="px-4 py-2 text-black bg-white rounded hover:bg-orange-400">Contact
-                Us</button>
-        </nav>
+
         <div class=" ml-32 mt-32 mb-24">
             <h1 class="text-5xl font-bold ">About iWaveDigital</h1>
             <div class="flex mt-6 space-x-2">

@@ -1,7 +1,7 @@
 
 /* Responsive CSS */
 
-@media (max-width: 580px) {
+@media (max-width: 480px) {
   .form-main{
     width: fit-content;
     flex-direction: column !important;
@@ -39,8 +39,28 @@
     .service-title {
         font-size: 1.25rem;
     }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
-@media (min-width: 581px) and (max-width: 720px) {
+@media (min-width: 481px) and (max-width: 720px) {
   
   .header {
     padding: 1.5rem;
