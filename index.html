@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="responsive.css" />
+    <!-- <link rel="stylesheet" href="responsive.css" /> -->
     <link rel="stylesheet" href="slider.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
@@ -123,12 +123,12 @@
         <div class="marquee">
           <ul>
             <li>
-              <span class="text">Over 250+ business growing with us</span>
+              <span class="text text-xl">Over 250+ business growing with us</span>
             </li>
           </ul>
           <ul aria-hidden="true">
             <li>
-              <span class="text">Over 250+ business growing with us</span>
+              <span class="text  text-xl">Over 250+ business growing with us</span>
             </li>
           </ul>
         </div>
@@ -144,7 +144,7 @@
       <div
         class="flex flex-col md:flex-row gap-[60px] w-full items-center md:py-[40px]"
       >
-        <div class="p-[15px]">
+        <div class=" md:w-[40%] w-full  p-[15px]">
           <div class="linkWrap text-white text-[25px] font-bold mb-3">
             <a href="#" class="link style-2">
               <span class="mask">
@@ -176,10 +176,10 @@
           </div>
         </div>
         <div
-          class="flex flex-col md:flex-row gap-[30px] w-full p-[15px] text-black"
+          class="flex flex-col md:flex-row gap-[30px] w-[60%] w-full p-[15px] text-black"
         >
           <div
-            class="bg-white w-full p-[40px] flex flex-col gap-[20px] items-start rounded-xl md:w-[394px] md:h-[300px]"
+            class="bg-white w-full p-[40px] flex flex-col gap-[20px] items-start rounded-xl  md:h-[300px]"
           >
             <div
               class="h-[50px] w-[50px] bg-[#e09d26] rounded-full flex items-center justify-center text-white"
@@ -231,7 +231,7 @@
             </div>
           </div>
           <div
-            class="bg-white w-full p-[40px] flex flex-col gap-[20px] items-start rounded-xl md:w-[394px] md:h-[300px]"
+            class="bg-white w-full p-[40px] flex flex-col gap-[20px] items-start rounded-xl md:h-[300px]"
           >
             <div
               class="h-[50px] w-[50px] bg-[#3160a4] rounded-full flex items-center justify-center text-white"
@@ -317,7 +317,7 @@
     </section> -->
 
     <div class="flex items-center justify-center my-10 m-3">
-      <div class="card-1 px-10 py-6 md:py-[10rem] h-fit md:w-[70%]">
+      <div class="card-1 px-10 py-6 md:py-[4rem] h-fit md:w-[70%]">
         <h6
           class="font-bold text-2xl md:text-4xl text-orange-400 sm:text-xl uppercase text-center"
         >
@@ -335,73 +335,74 @@
       </div>
     </div>
 
-    <div class="container flex flex-col md:flex-row h-fit md:h-[50%]">
-      <div id="marketing" class="section group transition-200 w-full">
-        <div
-          class="content flex group-hover:gap-4 flex-col cursor-pointer group items-center justify-center"
-        >
-          <h1 class="group-hover:hidden text-2xl font-bold text-center">
-            Feedback
-          </h1>
-          <p
-            class="text-gray-700 hidden scale-1 group-hover:block group-hover:delay-1000 group-hover:transform group-hover:transition group-hover:duration-500 text-2xl"
-          >
-            iWave Digital is a game-changer! Their innovative approach and use
-            of the latest affiliate marketing tools have helped us reach new
-            audiences and expand our brand reach. We're seeing a steady increase
-            in qualified leads and conversions.
-          </p>
-        </div>
-        <div class="overlay"></div>
-      </div>
-      <div id="technology" class="section group w-full">
-        <div class="content flex gap-4 flex-col cursor-pointer">
-          <h1 class="group-hover:hidden text-2xl font-bold text-center">
-            Client Testimonials
-          </h1>
-          <p
-            class="text-gray-700 hidden scale-1 group-hover:block group-hover:transform group-hover:transition group-hover:duration-500 text-2xl"
-          >
-            We needed a fresh perspective on our affiliate marketing strategy,
-            and iWave Digital delivered it! Their team is highly knowledgeable
-            about the latest trends and technologies, and they were able to
-            develop a program tailored to our specific needs.
-          </p>
-        </div>
-        <div class="overlay"></div>
-      </div>
-      <div id="advertising" class="section group w-full">
-        <div class="content flex gap-4 flex-col cursor-pointer">
-          <h1 class="group-hover:hidden text-2xl font-bold text-center">
-            Words from Our Customers
-          </h1>
-          <p
-            class="text-gray-700 hidden scale-1 group-hover:block group-hover:transform group-hover:transition group-hover:duration-500 text-2xl"
-          >
-            iWave Digital is a true partner in our success. They're always
-            looking for new ways to improve our affiliate marketing program
-            using the latest technology. We highly recommend them to any
-            business looking to grow their affiliate sales.
-          </p>
-        </div>
-        <div class="overlay"></div>
-      </div>
+   
+<div class="container flex flex-col md:flex-row h-fit md:h-[50%]">
+  <div id="marketing" class="section group transition-200 w-full">
+    <div
+      class="content flex group-hover:gap-4 flex-col cursor-pointer group items-center justify-center"
+    >
+      <h1 class="group-hover:hidden text-2xl font-bold text-center">
+        Feedback
+      </h1>
+      <p
+        class="!text-white hidden scale-1 group-hover:block group-hover:delay-1000 group-hover:transform group-hover:transition group-hover:duration-500 text-2xl"
+      >
+        iWave Digital is a game-changer! Their innovative approach and use
+        of the latest affiliate marketing tools have helped us reach new
+        audiences and expand our brand reach. We're seeing a steady increase
+        in qualified leads and conversions.
+      </p>
     </div>
+    <div class="overlay"></div>
+  </div>
+  <div id="technology" class="section group w-full">
+    <div class="content flex gap-4 flex-col cursor-pointer">
+      <h1 class="group-hover:hidden text-2xl font-bold text-center">
+        Client Testimonials
+      </h1>
+      <p
+        class="text-gray-700 hidden scale-1 group-hover:block group-hover:transform group-hover:transition group-hover:duration-500 text-2xl"
+      >
+        We needed a fresh perspective on our affiliate marketing strategy,
+        and iWave Digital delivered it! Their team is highly knowledgeable
+        about the latest trends and technologies, and they were able to
+        develop a program tailored to our specific needs.
+      </p>
+    </div>
+    <div class="overlay"></div>
+  </div>
+  <div id="advertising" class="section group w-full">
+    <div class="content flex gap-4 flex-col cursor-pointer">
+      <h1 class="group-hover:hidden text-2xl font-bold text-center">
+        Words from Our Customers
+      </h1>
+      <p
+        class="text-gray-700 hidden scale-1 group-hover:block group-hover:transform group-hover:transition group-hover:duration-500 text-2xl"
+      >
+        iWave Digital is a true partner in our success. They're always
+        looking for new ways to improve our affiliate marketing program
+        using the latest technology. We highly recommend them to any
+        business looking to grow their affiliate sales.
+      </p>
+    </div>
+    <div class="overlay"></div>
+  </div>
+</div>
 
     <div
-      class="h-fit p-3 py-5 bg-red-100 flex flex-col items-center py-10 relative bg-cover bg-[url('https://plus.unsplash.com/premium_photo-1682434403587-1313db01ed02?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]"
+      class="h-fit p-3 py-5 bg-red-100 mt-4 flex-col items-center py-10 relative bg-cover bg-[url('https://plus.unsplash.com/premium_photo-1682434403587-1313db01ed02?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]"
     >
       <div class="bg-black w-full h-full absolute inset-0 opacity-70"></div>
       <div class="container-anim z-1 flex justify-center w-full">
         <h1
-          class="text-3xl md:text-6xl uppercase font-bold outline-text-blog text-center"
+          class="text-3xl md:text-6xl z-1 uppercase font-bold outline-text-blog text-center"
         >
           Our Blog Article
         </h1>
       </div>
-      <div class="z-1 flex gap-5 mt-5 flex-col md:flex-row">
+      <div class="z-1 flex gap-5 items-center justify-center     mt-5 flex-col md:flex-row">
         <div
-          class="bg-white bg-opacity-25 backdrop-blur-xl p-3 rounded-2xl w-full md:w-[629px] flex flex-col gap-3"
+          class="bg-white bg-opacity-25 backdrop-blur-xl p-3 rounded-2xl w-full md:w-[529px] flex flex-col gap-3"
         >
           <div class="group">
             <img
@@ -426,7 +427,7 @@
           </div>
         </div>
         <div
-          class="bg-white bg-opacity-25 backdrop-blur-xl p-3 rounded-2xl w-full md:w-[629px] flex flex-col gap-3"
+          class="bg-white bg-opacity-25 backdrop-blur-xl p-3 rounded-2xl w-full md:w-[529px] flex flex-col gap-3"
         >
           <div class="group">
             <img

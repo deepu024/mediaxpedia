@@ -1,109 +1,58 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content_s="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="service.css" />
 
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content_s="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
 
-  <body>
+    <script src= 
+"https://cdn.tailwindcss.com"> 
+	</script> 
+	<script src= 
+"https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"> 
+	</script> 
 
-    <!-- ADVERTISERS SERVICE CARD -->
-    <section id="advertisers" class="advertisers-service-sec pt-5 pb-5">
-      <div class="">
-        <div class="row">
-          <div class="section-header text-center">
-            <h2 class="fw-bold fs-1">
-              Our
-              <span class="b-class-secondary">Advertiser </span>Services
-            </h2>
-            <p class="sec-icon"><i class="fa-solid fa-gear"></i></p>
-          </div>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            
+
+                <a> <div class="logo"><img src="./images/image.png"></div></a>
+            
+            <div class="menu-icon" id="menu-icon">
+                &#9776;
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="./">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./service.html">Services</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
         </div>
-        <div
-          class="row mt-5 mt-md-4 row-cols-1 row-cols-sm-1 row-cols-md-3 justify-content-center"
-        >
-          <div class="col">
-            <div class="service-card">
-              <div class="icon-wrapper">
-                <i class="fa-solid fa-chart-line"></i>
-              </div>
-              <h3>Tracking Lead</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Quisquam consequatur necessitatibus eaque.
-              </p>
-            </div>
-          </div>
-          <div class="col">
-            <div class="service-card">
-              <div class="icon-wrapper">
-                <i class="fa-solid fa-arrows-down-to-people"></i>
-              </div>
-              <h3>Advanced Targeting solution</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Quisquam consequatur necessitatibus eaque.
-              </p>
-            </div>
-          </div>
-          <div class="col">
-            <div class="service-card">
-              <div class="icon-wrapper">
-                <i class="fa-solid fa-globe"></i>
-              </div>
-              <h3>Global Reach & Quality Traffic</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Quisquam consequatur necessitatibus eaque.
-              </p>
-            </div>
-          </div>
-          <div class="col">
-            <div class="service-card">
-              <div class="icon-wrapper">
-                <i class="fa-solid fa-money-check-dollar"></i>
-              </div>
-              <h3>Flexible pricing models</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Quisquam consequatur necessitatibus eaque.
-              </p>
-            </div>
-          </div>
-          <div class="col">
-            <div class="service-card">
-              <div class="icon-wrapper">
-                <i class="fa-regular fa-circle-check"></i>
-              </div>
-              <h3>Advanced optimization technologies & methodologies</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Quisquam consequatur necessitatibus eaque.
-              </p>
-            </div>
-          </div>
-          <div class="col">
-            <div class="service-card">
-              <div class="icon-wrapper">
-                <i class="fa-solid fa-people-group"></i>
-              </div>
-              <h3>Dedicated account management team</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Quisquam consequatur necessitatibus eaque.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ADVERTISERS SERVICE CARD ENDED -->
+    </nav>
 
-    <!-- <div class="container_service grid grid-cols-1 md:grid-cols-3">
-        <div class="card-2">
+    <script src="script.js"></script>
+    <div class=" ml-32 mt-32 mb-24">
+        <h1 class="text-5xl font-bold ">iWaveDigital Service</h1>
+        <div class="flex mt-6 space-x-2">
+
+            <a href="./index.html" class>HOME </a>
+            <p> > </p>
+            <h1>Our Service</h1>
+        </div>
+        <!-- <img href = "./images/orange.jpg" alt="icon"> -->
+    </div>
+    <div class="container_service">
+        <div class="card">
             <div class="imgBx">
                 <img src="/images/services/1.png" alt="Mobile Marketing (CPI)">
                 <h1 class="custom-heading"> Mobile Marketing (CPI)</h1>
@@ -114,7 +63,7 @@
                     advertising,</p>
             </div>
         </div>
-        <div class="card-2">
+        <div class="card">
             <div class="imgBx">
                 <img src="/images/services/2.png" alt="Web Marketing (CPS)">
                 <h1 class="custom-heading "> Web Marketing (CPS)</h1>
@@ -126,7 +75,7 @@
                     advertising,</p>
             </div>
         </div>
-        <div class="card-2">
+        <div class="card">
             <div class="imgBx">
                 <img src="/images/services/3.png" alt="I-Gaming">
                 <h1 class="custom-heading"> I-Gaming</h1>
@@ -138,7 +87,7 @@
                     advertising,</p>
             </div>
         </div>
-        <div class="card-2">
+        <div class="card">
             <div class="imgBx">
                 <img src="/images/services/4.png" alt="Lead Generation">
                 <h1 class="custom-heading"> Lead Generation</h1>
@@ -150,7 +99,7 @@
                     advertising,</p>
             </div>
         </div>
-        <div class="card-2">
+        <div class="card">
             <div class="imgBx">
                 <img src="/images/services/5.png" alt="Branding">
                 <h1 class="custom-heading"> Branding</h1>
@@ -162,133 +111,103 @@
                     advertising,</p>
             </div>
         </div>
-        <div class="card-2">
+        <div class="card">
             <div class="imgBx">
                 <img src="/images/services/6.png" alt="Service 3">
                 <h1 class="custom-heading"> Influencer Marketing</h1>
             </div>
             <div class="content_s">
                 <h2>Card Four</h2>
-                <p>Iwavedigital offers a comprehensive Branding service focused on delivering CPV (Cost Per View)
-                    campaigns while simultaneously maintaining a high and profitable CR (Conversion Rate). Here's an
-                    overview of what the service entails:
+                <p>Iwavedigital offers a comprehensive Branding service focused on delivering CPV (Cost Per View) campaigns while simultaneously maintaining a high and profitable CR (Conversion Rate). Here's an overview of what the service entails:
 
-                    CPV Campaigns: Iwavedigital specializes in creating and executing CPV campaigns that are tailored to
-                    the client's brand and target audience. CPV campaigns typically involve paying for each view of an
-                    advertisement, making it crucial to optimize targeting and content_s to maximize views and
-                    engagement.
-                    Target Audience Analysis: Iwavedigital conducts in-depth analysis to identify the client's target
-                    audience segments. This includes demographic, geographic, psychographic, and behavioral profiling to
-                    ensure that campaigns reach the most relevant viewers.
-                    Conversion Rate Optimization (CRO): In addition to maximizing views, Iwavedigital places a strong
-                    emphasis on optimizing conversion rates. This involves implementing strategies to guide viewers
-                    through the conversion funnel, such as persuasive calls-to-action, landing page optimization, and
-                    A/B testing to identify the most effective conversion tactics.
-                    Overall, Iwavedigital's Branding service delivers CPV campaigns that not only generate high
-                    visibility and engagement but also drive profitable conversions, helping clients achieve their
-                    branding and marketing objectives effectively and efficiently.</p>
+CPV Campaigns: Iwavedigital specializes in creating and executing CPV campaigns that are tailored to the client's brand and target audience. CPV campaigns typically involve paying for each view of an advertisement, making it crucial to optimize targeting and content_s to maximize views and engagement.
+Target Audience Analysis: Iwavedigital conducts in-depth analysis to identify the client's target audience segments. This includes demographic, geographic, psychographic, and behavioral profiling to ensure that campaigns reach the most relevant viewers.
+Conversion Rate Optimization (CRO): In addition to maximizing views, Iwavedigital places a strong emphasis on optimizing conversion rates. This involves implementing strategies to guide viewers through the conversion funnel, such as persuasive calls-to-action, landing page optimization, and A/B testing to identify the most effective conversion tactics.
+Overall, Iwavedigital's Branding service delivers CPV campaigns that not only generate high visibility and engagement but also drive profitable conversions, helping clients achieve their branding and marketing objectives effectively and efficiently.</p>
             </div>
         </div>
-    </div> -->
+    </div>
 
-    <!-- <div class="flex items-center justify-center w-full mb-10">
-        <div class="card-1 px-10 py-6 md:py-[10rem] h-fit">
-        <h6 class="font-bold text-sm md:text-4xl text-orange-400 sm:text-xl uppercase text-center">We Shape the Future of Affiliate
-            Marketing: Driving Growth
-            Through Innovation</h6>
-        <p class="mt-10 text-center md:text-xl">With our team comprising industry experts boasting over 15
-            years of experience in the affiliate industry, we serve as your innovation partners.
-            Continuously delving into new technologies and strategies, we strive to expand the horizons
-            of growth. Together, we'll transform your affiliate program into a revenue engine powered by
-            state-of-the-art solutions.</p>
-        </div>
-    </div> -->
-
-    <!-- <div class="flex flex-col md:flex-row bg-gray-800 text-white">
-        <div class="flex justify-center items-center w-full p-8 lg:p-16">
-            <div class="bg-orange-400 text-gray-800 p-8 rounded-lg shadow-md">
-                <h2 class="text-3xl font-bold mb-6">Contact Directly</h2>
-                <div class="mb-6">
-                    <p class="mb-2">804, 8th Floor, MediaXpedia Technologies, Welldone Tech Park, Sector 48, Sohna Road,
-                        Gurgaon, Haryana - 122018</p>
-                    <p>Email: <a href="mailto:info@iwavedigital.com" class="underline">info@iwavedigital.com</a></p>
-                    <p>Email: <a href="mailto:contact@iwavedigital.com" class="underline">contact@iwavedigital.com</a>
-                    </p>
+    <section class="bg-black-100">
+        <div class="relative h-96">
+            <div class="absolute inset-0 bg-black bg-center opacity-40"
+                style="background-image: url('./images/demo.webp');"></div>
+            <div class="relative flex items-center justify-center h-full">
+                <div class="text-center ">
+                    <h6 class="font-bold text-3xl text-orange-400 sm:text-xl">We Shape the Future of Affiliate
+                        Marketing: Driving Growth
+                        Through Innovation</h6>
+                    <p class="mt-10 max-w-md mx-auto">With our team comprising industry experts boasting over 15
+                        years of experience in the affiliate industry, we serve as your innovation partners.
+                        Continuously delving into new technologies and strategies, we strive to expand the horizons
+                        of growth. Together, we'll transform your affiliate program into a revenue engine powered by
+                        state-of-the-art solutions.</p>
                 </div>
             </div>
         </div>
-        <div class="flex justify-center items-center w-full p-8 lg:p-16 bg-gray-900">
-            <div class="bg-gray-800 p-8 rounded-lg shadow-md w-full">
-                <h2 class="text-3xl font-bold mb-6">Send us a Message</h2>
-                <form action="#" method="POST" class="space-y-6">
-                    <div>
-                        <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Name</label>
-                        <input type="text" id="name" name="name" required
-                            class="w-full p-3 border border-gray-600 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-orange-400">
-                    </div>
-                    <div>
-                        <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email</label>
-                        <input type="email" id="email" name="email" required
-                            class="w-full p-3 border border-gray-600 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-orange-400">
-                    </div>
-                    <div>
-                        <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Message</label>
-                        <textarea id="message" name="message" required
-                            class="w-full p-3 border border-gray-600 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-orange-400"></textarea>
-                    </div>
-                    <button type="submit"
-                        class="w-full bg-orange-400 hover:bg-orange-500 text-white p-3 rounded-md transition duration-300">LET'S
-                        TALK</button>
-                </form>
+</div>
+</section>
+
+
+
+<div class="flex flex-col lg:flex-row bg-gray-800 text-white min-h-screen">
+    <!-- Contact Information Section -->
+    <div class="flex justify-center items-center w-full lg:w-1/2 p-8 lg:p-16">
+        <div class="bg-orange-400 text-gray-800 p-8 rounded-lg shadow-md w-full">
+            <h2 class="text-3xl font-bold mb-6">Contact Directly</h2>
+            <div class="mb-6">
+                <p class="mb-2">804, 8th Floor, MediaXpedia Technologies, Welldone Tech Park, Sector 48, Sohna Road, Gurgaon, Haryana - 122018</p>
+                <p>Email: <a href="mailto:info@iwavedigital.com" class="underline">info@iwavedigital.com</a></p>
+                <p>Email: <a href="mailto:contact@iwavedigital.com" class="underline">contact@iwavedigital.com</a></p>
             </div>
         </div>
-    </div> -->
-
-    <!-- <footer class="bg-gray-900 text-white  relative footer-bg">
-        <div class="container  flex justify-between items-center">
-            <div class="w-1/3 p-4 py-10">
-                <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
-                <p>804, 8th Floor, MediaXpedia Technologies, Welldone Tech Park, Sector 48, Sohna Road, Gurgaon, Haryana
-                    - 122018</p>
-                <p>Email: <a href="mailto:sales@iwavedigital.com" class="underline">sales@iwavedigital.com</a></p>
-                <p>Email: <a href="mailto:adops@iwavedigital.com" class="underline">adops@iwavedigital.com</a></p>
-                <p class="mt-4">&copy; 2024 All Rights Reserved - iWaveDigital.com</p>
-            </div>
-            <div class="w-1/3  p-4 ">
-                <iframe class="rounded-lg h-1/2"
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14036.077928228338!2d77.038075!3d28.418669!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d23ac952fe5ed%3A0x2d354a104d995c73!2sWelldone%20Techpark!5e0!3m2!1sen!2sin!4v1721215307960!5m2!1sen!2sin"
-                    width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                    tabindex="0"></iframe>
-            </div>
-            <div class="w-1/3 p-4 rounded-lg">
-
-
-            </div>
-
+    </div>
+    <!-- Contact Form Section -->
+    <div class="flex justify-center items-center w-full lg:w-1/2 p-8 lg:p-16 bg-gray-900">
+        <div class="bg-gray-800 p-8 rounded-lg shadow-md w-full">
+            <h2 class="text-3xl font-bold mb-6">Send us a Message</h2>
+            <form action="#" method="POST" class="space-y-6">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Name</label>
+                    <input type="text" id="name" name="name" required class="w-full p-3 border border-gray-600 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-orange-400">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email</label>
+                    <input type="email" id="email" name="email" required class="w-full p-3 border border-gray-600 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-orange-400">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Message</label>
+                    <textarea id="message" name="message" required class="w-full p-3 border border-gray-600 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-orange-400"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-orange-400 hover:bg-orange-500 text-white p-3 rounded-md transition duration-300">LET'S TALK</button>
+            </form>
         </div>
-    </footer> -->
+    </div>
+</div>
 
-    <!-- <footer class="bg-gray-900 text-white  relative footer-bg">
-        <div class=" flex justify-between items-center ">
-            <div class="w-1/3 p-4 py-10">
-                <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
-                <p>804, 8th Floor, MediaXpedia Technologies, Welldone Tech Park, Sector 48, Sohna Road, Gurgaon,
-                    Haryana - 122018</p>
-                <p>Email: <a href="mailto:sales@iwavedigital.com" class="underline">sales@iwavedigital.com</a></p>
-                <p>Email: <a href="mailto:adops@iwavedigital.com" class="underline">adops@iwavedigital.com</a></p>
-                <p class="mt-4">&copy; 2024 All Rights Reserved - iWaveDigital.com</p>
-            </div>
-            <div class="w-1/3  p-4 ">
-                <iframe class="rounded-lg h-1/2"
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14036.077928228338!2d77.038075!3d28.418669!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d23ac952fe5ed%3A0x2d354a104d995c73!2sWelldone%20Techpark!5e0!3m2!1sen!2sin!4v1721215307960!5m2!1sen!2sin"
-                    width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                    tabindex="0"></iframe>
-            </div>
-            <div class="w-1/3 p-4 rounded-lg">
-            </div>
+
+<footer class="bg-gray-900 text-white  relative footer-bg">
+    <div class="container  flex justify-between items-center ">
+        <div class="w-1/3 p-4 py-10">
+            <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+            <p>804, 8th Floor, MediaXpedia Technologies, Welldone Tech Park, Sector 48, Sohna Road, Gurgaon,
+                Haryana - 122018</p>
+            <p>Email: <a href="mailto:sales@iwavedigital.com" class="underline">sales@iwavedigital.com</a></p>
+            <p>Email: <a href="mailto:adops@iwavedigital.com" class="underline">adops@iwavedigital.com</a></p>
+            <p class="mt-4">&copy; 2024 All Rights Reserved - iWaveDigital.com</p>
         </div>
-    </footer> -->
+        <div class="w-1/3  p-4 ">
+            <!-- <iframe class="rounded-lg h-1/2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3482.2344449297926!2d77.0347936154508!3d28.393439282511257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d193fdbf75e6d%3A0x947d248df688b61b!2sWelldone%20Techpark!5e0!3m2!1sen!2sin!4v1594831952684!5m2!1sen!2sin" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+            <iframe class="rounded-lg h-1/2"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14036.077928228338!2d77.038075!3d28.418669!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d23ac952fe5ed%3A0x2d354a104d995c73!2sWelldone%20Techpark!5e0!3m2!1sen!2sin!4v1721215307960!5m2!1sen!2sin"
+                width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""
+                aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div class="w-1/3 p-4 rounded-lg">
+        </div>
+    </div>
+</footer>
 
-    <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
