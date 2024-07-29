@@ -1,7 +1,12 @@
-// document.getElementById('menu-icon').addEventListener('click', function() {
-//     var navLinks = document.getElementById('nav-links');
-//     navLinks.classList.toggle('show');
-// });
+
+const button = document.querySelector('#menu-button');
+const menu = document.querySelector('#menu');
+
+
+button.addEventListener('click', () => {
+  menu.classList.toggle('hidden');
+});
+
 
 const _random = ()=> {
     var num = Math.round(0xffffff * Math.random());
